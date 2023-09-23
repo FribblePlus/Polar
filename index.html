@@ -16,10 +16,20 @@
       src="https://kit.fontawesome.com/a7fbb27ef4.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("scroll", (e) => {
+        const nav = document.querySelector(".nav");
+        if (window.pageYOffset > 10) {
+          nav.classList.add("add-shadow");
+        } else {
+          nav.classList.remove("add-shadow");
+        }
+      });
+    </script>
   </head>
   <body>
     <!--Navigation Bar-->
-    <nav>
+    <nav class="nav" id="Home">
       <div class="Navigation">
         <img src="./images/logo.svg" alt="logo" />
         <input type="checkbox" id="check" />

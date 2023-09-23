@@ -39,6 +39,11 @@ nav{
     background: #fbf0f399;
     backdrop-filter: blur(15px);
     z-index: 300;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+.add-shadow{
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.055);
 }
 nav .Navigation{
     max-width: 1125px;
@@ -844,6 +849,9 @@ footer .Footer .container .newsletter .payment{
 
 
     /* Navigation Bar */
+    nav{
+        position: sticky;
+    }
     nav .Navigation .menu{
         display: flex;
         flex-direction: column;
